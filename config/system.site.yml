@@ -4,10 +4,12 @@ langcode: en
 uuid: 55c24c94-6737-43b1-90b6-d0a97dc220c1
 name: teamcommerce
 mail: 98089841+VitaliiDubinin@users.noreply.github.com
+
 slogan: "Hello from Pantheon commerce!!!"
 page:
   403: ""
   404: ""
+
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
