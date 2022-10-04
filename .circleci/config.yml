@@ -2,7 +2,8 @@
 defaults: &defaults
   docker:
     - image: quay.io/pantheon-public/build-tools-ci:8.x-php7.4
-  working_directory: ~/example_drops_8_composer
+  # working_directory: ~/example_drops_8_composer
+  working_directory: ~/teamcommerce
   environment:
     #=========================================================================
     # In addition to the environment variables defined in this file, also
@@ -238,10 +239,10 @@ workflows:
 
   scheduled_update_check:
     triggers:
-       - schedule:
-           cron: "0 0 * * *"
-           filters:
-             branches:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
               only:
                 - master
     jobs:
